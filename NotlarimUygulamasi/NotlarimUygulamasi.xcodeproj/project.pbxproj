@@ -32,6 +32,7 @@
 		C5BDB0DF2B5C09C000B5E13A /* AniEkleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BDB0DE2B5C09C000B5E13A /* AniEkleModel.swift */; };
 		F91A34092B35BD8A0027B00A /* Haritam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91A34082B35BD8A0027B00A /* Haritam.swift */; };
 		F95EA4462B4E8BA800DCD362 /* Favorilerim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95EA4452B4E8BA800DCD362 /* Favorilerim.swift */; };
+		F9A8947E2B5D17F300C5156A /* kayit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A8947D2B5D17F300C5156A /* kayit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		C5BDB0DE2B5C09C000B5E13A /* AniEkleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AniEkleModel.swift; sourceTree = "<group>"; };
 		F91A34082B35BD8A0027B00A /* Haritam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haritam.swift; sourceTree = "<group>"; };
 		F95EA4452B4E8BA800DCD362 /* Favorilerim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorilerim.swift; sourceTree = "<group>"; };
+		F9A8947D2B5D17F300C5156A /* kayit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kayit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				C5B972072B2F67CA00C8E5EA /* Hesap.swift */,
 				C54857212B387EE700463959 /* DetaySayfasi.swift */,
 				F91A34082B35BD8A0027B00A /* Haritam.swift */,
+				F9A8947D2B5D17F300C5156A /* kayit.swift */,
 				C5B971EF2B2F46DE00C8E5EA /* Main.storyboard */,
 				C5B971F22B2F46DF00C8E5EA /* Assets.xcassets */,
 				C5B971F42B2F46DF00C8E5EA /* LaunchScreen.storyboard */,
@@ -212,6 +215,7 @@
 				C5BDB0DF2B5C09C000B5E13A /* AniEkleModel.swift in Sources */,
 				C5B971EA2B2F46DE00C8E5EA /* AppDelegate.swift in Sources */,
 				C5B971EC2B2F46DE00C8E5EA /* SceneDelegate.swift in Sources */,
+				F9A8947E2B5D17F300C5156A /* kayit.swift in Sources */,
 				F91A34092B35BD8A0027B00A /* Haritam.swift in Sources */,
 				C5B972062B2F67B900C8E5EA /* Anilarim.swift in Sources */,
 				C54857242B3898A500463959 /* AnilarimHucre.swift in Sources */,

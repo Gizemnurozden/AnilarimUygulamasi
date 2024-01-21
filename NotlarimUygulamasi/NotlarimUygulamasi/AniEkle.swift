@@ -19,6 +19,7 @@ class AniEkle: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
     @IBOutlet weak var tarihSaatText: UITextField!
     @IBOutlet weak var notTextView: UITextView!
     @IBOutlet weak var mapKitView: MKMapView!
+
     
     var datePicker:UIDatePicker?
     

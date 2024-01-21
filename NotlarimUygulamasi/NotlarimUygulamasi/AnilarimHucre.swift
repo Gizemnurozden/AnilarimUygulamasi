@@ -7,9 +7,18 @@
 
 import UIKit
 
+protocol FavoriButonDelegate: class {
+    func favoriButonTiklandi(forCell cell: UITableViewCell)
+}
+
 class AnilarimHucre: UITableViewCell {
 
+    weak var delegate: FavoriButonDelegate?
     //Tableviewde hücre görüntüsü için açıldı.
+    
+    
+
+    
     @IBOutlet weak var imageViewSecilen: UIImageView!
     
     @IBOutlet weak var aniBaslikLabel: UILabel!
@@ -28,5 +37,12 @@ class AnilarimHucre: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
 
+    //favori butonu aksiyonu
+    @IBAction func favoriButonuTiklandi(_ sender: Any) {
+        delegate?.favoriButonTiklandi(forCell: self)
+    }
+    
+    
 }

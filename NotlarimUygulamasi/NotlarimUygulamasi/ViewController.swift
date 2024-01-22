@@ -54,21 +54,7 @@ class ViewController: UIViewController {
     @IBAction func buttonKayitOl(_ sender: Any) {
          //kullanıcının boş bırakma ihtimali olduğu için if kullanıyoruz
         //Auth kullanarak veritabanında kullanıcı oluşturuyorum.Ve yazılanları .text dieyerk çekiyorum.
-        if emailText.text != "" && sifreText.text != "" {
-            Auth.auth().createUser(withEmail: emailText.text!, password: sifreText.text!) { (authdata, error ) in
-                if error != nil {
-                    self.makeAlert(titleGiris: "Error!", messageGiris: error!.localizedDescription)
-                    
-                }else { //kullanıcı tüm herşeyi doğru girdiyse anasayfaya yönlendiriyorum.
-                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
-                }
-                
-            }
-            
-            
-        } else  {
-            makeAlert(titleGiris: "Error!", messageGiris: "Kullanıcı adı ve Şifre giriniz.")
-        }
+        self.performSegue(withIdentifier: "girisToKayit", sender: nil)
         
     }
     //tüm else veya if lerin altına tek tek alert oluşturmak yerine bir alert fonksiyonu oluşturdum ve if ve elselein altında direkt bu fonksiyonu çağırıyorum. fonksiyonma başlık ve mesaj zorunlulğu verdim.

@@ -171,23 +171,6 @@
             </objects>
             <point key="canvasLocation" x="-1075.5725190839694" y="721.83098591549299"/>
         </scene>
-        <!--Favoriler-->
-        <scene sceneID="QFc-zn-4WY">
-            <objects>
-                <viewController id="pJD-xA-YEs" customClass="Favorilerim" customModule="NotlarimUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yVa-x6-W99">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Mfd-Xd-qFU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Favoriler" image="star.fill" catalog="system" id="Gsh-FV-RAI"/>
-                    <navigationItem key="navigationItem" id="EpU-QG-AHq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="deD-L3-PIF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1117" y="539"/>
-        </scene>
         <!--Hesap-->
         <scene sceneID="tuc-Tf-cEJ">
             <objects>
@@ -216,7 +199,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWk-as-2by" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="411" y="1162"/>
+            <point key="canvasLocation" x="-8" y="1175"/>
+        </scene>
+        <!--Favoriler-->
+        <scene sceneID="zJW-SY-5fM">
+            <objects>
+                <viewController id="h3O-Sj-JW2" customClass="Favoriler" customModule="NotlarimUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l5K-DF-aAl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rr4-zA-Aqw">
+                                <rect key="frame" x="132" y="504" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="A92-W8-WDF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="button:" destination="h3O-Sj-JW2" eventType="touchUpInside" id="WlF-Z9-imr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6eG-vz-MKB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6eG-vz-MKB" firstAttribute="bottom" secondItem="Rr4-zA-Aqw" secondAttribute="bottom" constant="303" id="C9z-1O-Deq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favoriler" image="star" catalog="system" id="udi-n1-qj9"/>
+                    <navigationItem key="navigationItem" id="7OI-rT-6al"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enh-5x-j8M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826.71755725190837" y="507.74647887323948"/>
         </scene>
         <!--AnaSayfa-->
         <scene sceneID="abj-WD-Y7w">
@@ -452,7 +468,7 @@
                                                             <buttonConfiguration key="configuration" style="filled" title="★"/>
                                                             <connections>
                                                                 <action selector="favoriButonuTiklandi:" destination="wzC-4m-avT" eventType="touchUpInside" id="uKh-87-ydc"/>
-                                                                <segue destination="pJD-xA-YEs" kind="presentation" identifier="toFavoriVC" id="IY2-iH-ACj"/>
+                                                                <segue destination="h3O-Sj-JW2" kind="presentation" identifier="toFavoriVC" id="AMF-6a-mpL"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -644,8 +660,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="Jxx-Fp-tGg" kind="relationship" relationship="viewControllers" id="sMg-8n-grc"/>
-                        <segue destination="pJD-xA-YEs" kind="relationship" relationship="viewControllers" id="KYk-ys-vWa"/>
                         <segue destination="LB5-Sv-xyK" kind="relationship" relationship="viewControllers" id="Fyo-eu-tna"/>
+                        <segue destination="h3O-Sj-JW2" kind="relationship" relationship="viewControllers" id="9eL-0V-tB0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q4n-Fy-QA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -734,7 +750,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="mZT-aZ-EVx"/>
-        <segue reference="KYk-ys-vWa"/>
+        <segue reference="AMF-6a-mpL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="aniekle1" width="730" height="476"/>
@@ -743,7 +759,7 @@
         <image name="haritam" width="634" height="1018"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

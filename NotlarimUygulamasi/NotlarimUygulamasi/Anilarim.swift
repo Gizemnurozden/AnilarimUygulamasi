@@ -44,7 +44,7 @@ class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource, Fa
     }
     //favori butonu tıklanınca perform Segue yapacak
     func favoriButonTiklandi(forCell cell: UITableViewCell) {
-        //performSegue(withIdentifier: "toFavoriVC", sender: nil)
+        performSegue(withIdentifier: "toFavoriVC", sender: nil)
     }
    
     

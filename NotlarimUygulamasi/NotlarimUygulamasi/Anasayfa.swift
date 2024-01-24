@@ -17,8 +17,34 @@ class Anasayfa: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//ani ekle tıklanabilirlik yapıldı.
+
+        //görünümler
+        imageAniEkle.layer.cornerRadius = 15
+        imageAnilarim.layer.cornerRadius = 15
+        imageHarita.layer.cornerRadius = 15
         
+        imageAniEkle.clipsToBounds = false
+        imageAniEkle.layer.borderColor = UIColor.systemBlue.cgColor
+        imageAniEkle.layer.shadowColor = UIColor.black.cgColor
+        imageAniEkle.layer.shadowOpacity = 1.2
+        imageAniEkle.layer.shadowOffset = CGSize(width: 0, height: 0)
+        imageAniEkle.layer.shadowRadius = 10
+        
+        imageAnilarim.clipsToBounds = false
+        imageAnilarim.layer.shadowOffset = CGSize(width: 0, height: 0)
+        imageAnilarim.layer.shadowColor = UIColor.black.cgColor
+        imageAnilarim.layer.shadowOpacity = 1.2
+        imageAnilarim.layer.shadowRadius = 10
+        
+        imageHarita.clipsToBounds = false
+        imageHarita.layer.shadowOffset = CGSize(width: 0, height: 0)
+        imageHarita.layer.shadowColor = UIColor.black.cgColor
+        imageHarita.layer.shadowOpacity = 1.2
+        imageHarita.layer.shadowRadius = 10
+        
+        self.view.addSubview(imageAniEkle)
+        
+        //ani ekle tıklanabilirlik yapıldı.
         imageAniEkle.isUserInteractionEnabled = true
         let aniEkleTiklama = UITapGestureRecognizer(target: self, action: #selector(aniEkleGecis))
         imageAniEkle.addGestureRecognizer(aniEkleTiklama)

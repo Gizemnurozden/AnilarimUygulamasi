@@ -10,7 +10,7 @@ import Firebase
 import FirebaseFirestore
 import SDWebImage
 
-class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource, FavoriButonDelegate {
+class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource , AnilarimHucreDelegate {
     
   
     
@@ -25,9 +25,11 @@ class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource, Fa
     var kullaniciFotoArray = [String()]
     var notArray = [String()]
     var tarihArray = [String()]
+    var likesArray = [Bool()]
     var secilenAniId = ""
   
-
+    var documentIdArray = [String()]
+    var documentID: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,61 +39,19 @@ class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource, Fa
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.separatorColor = UIColor(white: 0.95, alpha: 1)
+        
         getDataFromFirestore()
         
        
         
     }
-    //favori butonu tıklanınca perform Segue yapacak
-    func favoriButonTiklandi(forCell cell: UITableViewCell) {
-        
-        if let indexPath = tableView.indexPath(for: cell) {
-               // Extract the data for the selected cell
-               let selectedAniBaslik = aniBaslikArray[indexPath.row]
-               let selectedKullaniciFoto = kullaniciFotoArray[indexPath.row]
-               let selectedNot = notArray[indexPath.row]
-               let selectedTarih = tarihArray[indexPath.row]
-               
-               // Add the data to the "Favoriler" collection in Firestore
-               addDataToFavoriler(aniBaslik: selectedAniBaslik, kullaniciFoto: selectedKullaniciFoto, not: selectedNot, tarih: selectedTarih)
-               
-               // Perform the segue
-             
-           }
-      
-        
-    }
-    
-    
-    func addDataToFavoriler(aniBaslik: String, kullaniciFoto: String, not: String, tarih: String) {
-        let fireStoreDatabase = Firestore.firestore()
-        
-        guard let currentUser = Auth.auth().currentUser else {
-            return
-        }
-        let userEmail = currentUser.email
-        
-        if let userEmail = userEmail {
-            let favorilerRef = fireStoreDatabase.collection("Favoriler")
-            let favoriData: [String: Any] = [
-                "aniBaslik": aniBaslik,
-                "kullaniciFoto": kullaniciFoto,
-                "not": not,
-                "tarih": tarih,
-                "kayıtBy": userEmail
-            ]
+    func switchValueChanged(forCell cell: AnilarimHucre, switchValue: Bool) {
+            // Switch'in değeri değiştikçe yapılacak işlemler
+            print("Switch değeri: \(switchValue)")
             
-            favorilerRef.addDocument(data: favoriData) { error in
-                if let error = error {
-                    print("Error adding document to Favoriler collection: \(error.localizedDescription)")
-                } else {
-                    print("Document added to Favoriler collection successfully!")
-                }
-            }
+           
         }
-    }
-   
-    
     //DATABASE
     
     func getDataFromFirestore(){
@@ -119,12 +79,14 @@ class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource, Fa
                     self.kullaniciFotoArray.removeAll(keepingCapacity: false)
                     self.tarihArray.removeAll(keepingCapacity: false)
                     self.notArray.removeAll(keepingCapacity: false)
-                    
+                    self.likesArray.removeAll(keepingCapacity: false)
+                    self.documentIdArray.removeAll(keepingCapacity: false)
                     
                     
                     
                     for document in  snapshot!.documents {
                         let documentID = document.documentID
+                        self.documentIdArray.append(documentID)
                         
                         if let aniBaslik = document.get("aniBaslik") as? String {
                             self.aniBaslikArray.append(aniBaslik)
@@ -139,6 +101,9 @@ class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource, Fa
                         }
                         if let date = document.get("date") as? String {
                             self.tarihArray.append(date)
+                        }
+                        if let likes = document.get("likes") as? Bool  {
+                            self.likesArray.append(likes)
                         }
                        
                     }
@@ -174,12 +139,18 @@ class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource, Fa
         let hucre = tableView.dequeueReusableCell(withIdentifier: "anilarHucre", for: indexPath) as! AnilarimHucre
        
         
-        
         hucre.aniBaslikLabel.text = aniBaslikArray[indexPath.row]
         hucre.imageViewSecilen.sd_setImage(with: URL(string: self.kullaniciFotoArray[indexPath.row]))
         hucre.tarihVeSaatLabel.text = tarihArray[indexPath.row]
+        hucre.documentIdLabel.text = documentIdArray[indexPath.row]
        
+               
+        hucre.backgroundColor = UIColor(white: 0.95, alpha: 1)
+        hucre.hucreArkaPlan.layer.cornerRadius = 10.0
+
+    
         return hucre
+        
     }
     //VERİTABANINDAN VE ARAYÜZDEN SİLME İŞLEMLERİ YAZILDI.
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {

@@ -6,18 +6,25 @@
 //
 
 import UIKit
+import Firebase
 
-protocol FavoriButonDelegate: AnyObject {
-    func favoriButonTiklandi(forCell cell: UITableViewCell)
+protocol AnilarimHucreDelegate: AnyObject {
+    
+    func switchValueChanged(forCell cell: AnilarimHucre, switchValue: Bool)
+    
 }
+
 
 class AnilarimHucre: UITableViewCell {
 
-    weak var delegate: FavoriButonDelegate?
+  
     //Tableviewde hücre görüntüsü için açıldı.
     
-    
+    weak var delegate: AnilarimHucreDelegate?
 
+    @IBOutlet weak var switchAniDurumu: UISwitch!
+    
+    @IBOutlet weak var documentIdLabel: UILabel!
     
     @IBOutlet weak var imageViewSecilen: UIImageView!
     
@@ -35,14 +42,20 @@ class AnilarimHucre: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+       
     }
     
 
-    //favori butonu aksiyonu
-    @IBAction func favoriButonuTiklandi(_ sender: Any) {
-        delegate?.favoriButonTiklandi(forCell: self)
-    }
     
+    @IBAction func switchValueChanged(_ sender: UISwitch) {
+        let fireStoreDatabase = Firestore.firestore()
+        
+            let favoriCount = switchAniDurumu.isOn
+            
+            let favoriStore = ["likes" : favoriCount] as [String : Any ]
+            fireStoreDatabase.collection("Anilar").document(documentIdLabel.text!).setData(favoriStore, merge: true)
+        
+            print("değişti")
+        }
     
 }

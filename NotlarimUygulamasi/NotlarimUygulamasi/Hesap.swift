@@ -7,13 +7,33 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class Hesap: UIViewController {
 
+    @IBOutlet weak var baslikLabel: UILabel!
+    
+    
+    @IBOutlet weak var emailText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
+        //veritabanından giriş yapan kullanıcının emailini çekiyor.
+        
+        if let user = Auth.auth().currentUser {
+            if let email = user.email {
+                emailText.text = email
+                print("Kullanıcı email: \(email)")
+            } else {
+                print("Kullanıcının email bilgisi bulunamadı.")
+            }
+        } else {
+            print("Kullanıcı oturum açmamış.")
+        }
+
     }
     
     //Hesaptan çıkış yapmak için çıkış butonu
@@ -26,6 +46,16 @@ class Hesap: UIViewController {
             print("error")
         }
         
+        
+    }
+    
+    
+   
+    
+    
+    @IBAction func sifremiUnuttumTiklandi(_ sender: Any) {
+        performSegue(withIdentifier: "hesapToSifremiUnuttum", sender: nil
+        )
         
     }
     

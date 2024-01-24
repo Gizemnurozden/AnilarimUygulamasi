@@ -24,7 +24,27 @@ class AniEkle: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
     var datePicker:UIDatePicker?
     
     override func viewDidLoad() {
+    
         super.viewDidLoad()
+        
+        
+        //görünüm kodları 
+        
+        let app = UINavigationBarAppearance()
+        app.backgroundColor = UIColor.tertiarySystemBackground
+        app.titleTextAttributes = [.foregroundColor: UIColor.systemIndigo]
+        app.largeTitleTextAttributes = [.foregroundColor: UIColor.systemGray]
+        navigationController?.navigationBar.barStyle = .black
+        
+        navigationController?.navigationBar.standardAppearance = app
+        navigationController?.navigationBar.compactAppearance = app
+        navigationController?.navigationBar.scrollEdgeAppearance = app
+        
+        
+        
+        
+        
+        
 //Fotoğraf seçin üstüne basılınca fotoğraf seçme yazıldı.
 //Albüme gidiş yazıldı.
         imageViewFotoSec.isUserInteractionEnabled = true
@@ -32,9 +52,9 @@ class AniEkle: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         imageViewFotoSec.addGestureRecognizer(fotografSec)
         
 //NAvigation bar'a Save kısmı eklendi.
-        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(title: "SAVE", style: .plain, target: self, action: #selector(saveButtonTiklandi))
+        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(title: "Kaydet", style: .plain, target: self, action: #selector(saveButtonTiklandi))
 //navigatiın bar'a back buttonu eklendi
-        navigationController?.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(title: "<Back", style: .plain, target: self, action: #selector(backButtonTiklandi))
+        navigationController?.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(title: "Geri", style: .plain, target: self, action: #selector(backButtonTiklandi))
 //mapkite tıklanınca geçiş yapıldı.
         mapKitView.isUserInteractionEnabled = true
         let mapKitSec = UITapGestureRecognizer(target: self, action: #selector(mapKitTiklandi))
@@ -122,7 +142,7 @@ class AniEkle: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
                             
                             var firestoreReference : DocumentReference? = nil
                             
-                            let firestoreAni = [ "imageUrl" : imageUrl!, "kayıtBy" : Auth.auth().currentUser!.email!, "aniBaslik": self.aniBaslikText.text!, "date" : self.tarihSaatText.text!, "not": self.notTextView.text!,"secilenEnlem": AniEkleModel.sharedIntance.secilenEnlem,"secilenBoylam" : AniEkleModel.sharedIntance.secilenBoylam] as [String: Any]
+                            let firestoreAni = [ "imageUrl" : imageUrl!, "kayıtBy" : Auth.auth().currentUser!.email!, "aniBaslik": self.aniBaslikText.text!, "date" : self.tarihSaatText.text!, "not": self.notTextView.text!,"secilenEnlem": AniEkleModel.sharedIntance.secilenEnlem,"secilenBoylam" : AniEkleModel.sharedIntance.secilenBoylam , "likes" : false ] as [String: Any]
                             
                             firestoreReference = firestoreDatabase.collection("Anilar").addDocument(data: firestoreAni, completion: {(error) in
                                 if error != nil {

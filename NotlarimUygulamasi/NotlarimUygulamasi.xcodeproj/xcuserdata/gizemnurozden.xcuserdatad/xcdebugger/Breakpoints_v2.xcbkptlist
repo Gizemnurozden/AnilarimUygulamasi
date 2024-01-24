@@ -3,4 +3,236 @@
    uuid = "67301370-45B3-43B5-8BC4-29155C479A17"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NotlarimUygulamasi/AnilarimHucre.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "AnilarimHucre"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A - d93c2ab7342a9d29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NotlarimUygulamasi.AnilarimHucre.hucreArkaPlan.getter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "NotlarimUygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gizemnurozden/Desktop/projeuygulama/AnilarimUygulamasi/NotlarimUygulamasi/NotlarimUygulamasi/AnilarimHucre.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A - aaabc2c63fa8e525"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NotlarimUygulamasi.AnilarimHucre.hucreArkaPlan.setter : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "NotlarimUygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gizemnurozden/Desktop/projeuygulama/AnilarimUygulamasi/NotlarimUygulamasi/NotlarimUygulamasi/AnilarimHucre.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A - 11fc2e8899f37ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NotlarimUygulamasi.AnilarimHucre.hucreArkaPlan.modify : Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "NotlarimUygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gizemnurozden/Desktop/projeuygulama/AnilarimUygulamasi/NotlarimUygulamasi/NotlarimUygulamasi/AnilarimHucre.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A - 9d76fca839a34715"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NotlarimUygulamasi.AnilarimHucre.hucreArkaPlan.modify : Swift.Optional&lt;__C.UIView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "NotlarimUygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gizemnurozden/Desktop/projeuygulama/AnilarimUygulamasi/NotlarimUygulamasi/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A - 7f842cb2c2d6c405"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NotlarimUygulamasi.AnilarimHucre.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; NotlarimUygulamasi.AnilarimHucre"
+                  moduleName = "NotlarimUygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gizemnurozden/Desktop/projeuygulama/AnilarimUygulamasi/NotlarimUygulamasi/NotlarimUygulamasi/AnilarimHucre.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A - abaec3e91cc4de32"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NotlarimUygulamasi.AnilarimHucre.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;NotlarimUygulamasi.AnilarimHucre&gt;"
+                  moduleName = "NotlarimUygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gizemnurozden/Desktop/projeuygulama/AnilarimUygulamasi/NotlarimUygulamasi/NotlarimUygulamasi/AnilarimHucre.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A - 5316aaadbb56f4c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NotlarimUygulamasi.AnilarimHucre.imageViewSecilen.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "NotlarimUygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gizemnurozden/Desktop/projeuygulama/AnilarimUygulamasi/NotlarimUygulamasi/NotlarimUygulamasi/AnilarimHucre.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A - 8b214ab6029418fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NotlarimUygulamasi.AnilarimHucre.imageViewSecilen.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "NotlarimUygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gizemnurozden/Desktop/projeuygulama/AnilarimUygulamasi/NotlarimUygulamasi/NotlarimUygulamasi/AnilarimHucre.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A - a207578ec89bad3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NotlarimUygulamasi.AnilarimHucre.imageViewSecilen.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "NotlarimUygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gizemnurozden/Desktop/projeuygulama/AnilarimUygulamasi/NotlarimUygulamasi/NotlarimUygulamasi/AnilarimHucre.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A - fe8f40d2a3ba980f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NotlarimUygulamasi.AnilarimHucre.imageViewSecilen.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "NotlarimUygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gizemnurozden/Desktop/projeuygulama/AnilarimUygulamasi/NotlarimUygulamasi/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A - 7f842cb2c2d6c426"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NotlarimUygulamasi.AnilarimHucre.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; NotlarimUygulamasi.AnilarimHucre"
+                  moduleName = "NotlarimUygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gizemnurozden/Desktop/projeuygulama/AnilarimUygulamasi/NotlarimUygulamasi/NotlarimUygulamasi/AnilarimHucre.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "EF5E7E24-E08D-4A6C-A03C-C341E72E2B1A - abaec3e91cc4de11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NotlarimUygulamasi.AnilarimHucre.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;NotlarimUygulamasi.AnilarimHucre&gt;"
+                  moduleName = "NotlarimUygulamasi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gizemnurozden/Desktop/projeuygulama/AnilarimUygulamasi/NotlarimUygulamasi/NotlarimUygulamasi/AnilarimHucre.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "208">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB40C15A-400F-4D96-98C5-000665CBBE37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NotlarimUygulamasi/AnilarimHucre.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "AnilarimHucre"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4A7AA20-6F79-4C13-BF6E-25657625EB0A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NotlarimUygulamasi/AnilarimHucre.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "AnilarimHucre"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

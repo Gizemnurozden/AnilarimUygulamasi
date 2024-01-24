@@ -32,6 +32,7 @@
 		C5B972062B2F67B900C8E5EA /* Anilarim.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B972052B2F67B900C8E5EA /* Anilarim.swift */; };
 		C5B972082B2F67CA00C8E5EA /* Hesap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B972072B2F67CA00C8E5EA /* Hesap.swift */; };
 		C5BDB0DF2B5C09C000B5E13A /* AniEkleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BDB0DE2B5C09C000B5E13A /* AniEkleModel.swift */; };
+		C5FF2E0A2B61184C00110093 /* FavorilerHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF2E092B61184C00110093 /* FavorilerHucre.swift */; };
 		F91A34092B35BD8A0027B00A /* Haritam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91A34082B35BD8A0027B00A /* Haritam.swift */; };
 		F9A8947E2B5D17F300C5156A /* kayit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A8947D2B5D17F300C5156A /* kayit.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		C5B972052B2F67B900C8E5EA /* Anilarim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anilarim.swift; sourceTree = "<group>"; };
 		C5B972072B2F67CA00C8E5EA /* Hesap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hesap.swift; sourceTree = "<group>"; };
 		C5BDB0DE2B5C09C000B5E13A /* AniEkleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AniEkleModel.swift; sourceTree = "<group>"; };
+		C5FF2E092B61184C00110093 /* FavorilerHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorilerHucre.swift; sourceTree = "<group>"; };
 		F91A34082B35BD8A0027B00A /* Haritam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haritam.swift; sourceTree = "<group>"; };
 		F9A8947D2B5D17F300C5156A /* kayit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kayit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 				C5B972072B2F67CA00C8E5EA /* Hesap.swift */,
 				C5722FF42B5E93990011EDA3 /* SifremiUnuttum.swift */,
 				C53C17522B5E7EFC00CD0F6B /* Favoriler.swift */,
+				C5FF2E092B61184C00110093 /* FavorilerHucre.swift */,
 				C54857212B387EE700463959 /* DetaySayfasi.swift */,
 				F91A34082B35BD8A0027B00A /* Haritam.swift */,
 				F9A8947D2B5D17F300C5156A /* kayit.swift */,
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FF2E0A2B61184C00110093 /* FavorilerHucre.swift in Sources */,
 				C54857222B387EE700463959 /* DetaySayfasi.swift in Sources */,
 				C5B07AF72B3709D300E7D8D7 /* MapKitVC.swift in Sources */,
 				C5B971EE2B2F46DE00C8E5EA /* ViewController.swift in Sources */,

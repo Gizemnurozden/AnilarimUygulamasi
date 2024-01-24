@@ -20,9 +20,11 @@ class SifremiUnuttum: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+    //datadan veriyi silme kodları
     func resetPassword(for email: String) {
         
-        
+        //Emaili doğrulanan kişinin verisini siliyor
         Auth.auth().sendPasswordReset(withEmail: email) { (error) in
             if let error = error {
                 print("Şifre sıfırlama başarısız: \(error.localizedDescription)")
@@ -41,7 +43,7 @@ class SifremiUnuttum: UIViewController {
         }
         
         
-        
+        //şifre yenileme butonuna basınca resetleyen kod
         @IBAction func sifreYenileButton(_ sender: Any) {
             
             let userEmail = emailDogrulamaText.text!

@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class kayit: UIViewController {
     @IBOutlet weak var mailText: UITextField!
@@ -45,9 +46,20 @@ class kayit: UIViewController {
                                }
                                else {
                                    //kullanıcı tüm herşeyi doğru girdiyse giriş sayfasına yönlendiriyorum.
-                                   let alert = UIAlertController(title: "Kayıt tamamlandı.", message: "Giriş yapabilirsiniz", preferredStyle: UIAlertController.Style.alert)
+                                   let alert = UIAlertController(title: "E-mail hesabınızı doğrulayın!", message: "E-mail hesabınıza aktivasyon linki gönderildi.Doğruladıktan sonra giriş yapabilirsiniz.", preferredStyle: UIAlertController.Style.alert)
                                    let tamamButton = UIAlertAction(title: "TAMAM", style: UIAlertAction.Style.cancel){_ in
-                                       self.performSegue(withIdentifier: "kayitToGiris", sender: nil)
+                                       guard let user = authdata?.user, error == nil else {
+                                           print(error?.localizedDescription ?? "Bilinmeyen hata")
+                                           return
+                                       }
+                                       user.sendEmailVerification { (error) in
+                                           if let error = error {
+                                               print("E-posta gönderilmedi")
+                                           }else {
+                                               self.performSegue(withIdentifier: "kayitToGiris", sender: nil)
+                                           }
+                                       }
+                                                
                                    }
                                    alert.addAction(tamamButton)
                                    self.present(alert, animated: true)

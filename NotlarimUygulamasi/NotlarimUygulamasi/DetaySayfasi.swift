@@ -82,7 +82,7 @@ class DetaySayfasi: UIViewController {
                         //MAPS
                         //mapkit seçilen pin başlığı gelecek şekilde detaylarda gözüküyor.
                         
-                        let location = CLLocationCoordinate2D(latitude: self.secilenBoylam, longitude: self.secilenEnlem)
+                        let location = CLLocationCoordinate2D(latitude: self.secilenEnlem, longitude: self.secilenBoylam)
                         let span = MKCoordinateSpan(latitudeDelta: 0.035, longitudeDelta: 0.035)
                         let region = MKCoordinateRegion(center: location, span: span)
                         self.mapKitViewSecilen.setRegion(region, animated: true)

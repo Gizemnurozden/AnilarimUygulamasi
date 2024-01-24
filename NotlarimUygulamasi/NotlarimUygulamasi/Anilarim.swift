@@ -44,7 +44,51 @@ class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource, Fa
     }
     //favori butonu tıklanınca perform Segue yapacak
     func favoriButonTiklandi(forCell cell: UITableViewCell) {
-        performSegue(withIdentifier: "toFavoriVC", sender: nil)
+        
+        if let indexPath = tableView.indexPath(for: cell) {
+               // Extract the data for the selected cell
+               let selectedAniBaslik = aniBaslikArray[indexPath.row]
+               let selectedKullaniciFoto = kullaniciFotoArray[indexPath.row]
+               let selectedNot = notArray[indexPath.row]
+               let selectedTarih = tarihArray[indexPath.row]
+               
+               // Add the data to the "Favoriler" collection in Firestore
+               addDataToFavoriler(aniBaslik: selectedAniBaslik, kullaniciFoto: selectedKullaniciFoto, not: selectedNot, tarih: selectedTarih)
+               
+               // Perform the segue
+             
+           }
+      
+        
+    }
+    
+    
+    func addDataToFavoriler(aniBaslik: String, kullaniciFoto: String, not: String, tarih: String) {
+        let fireStoreDatabase = Firestore.firestore()
+        
+        guard let currentUser = Auth.auth().currentUser else {
+            return
+        }
+        let userEmail = currentUser.email
+        
+        if let userEmail = userEmail {
+            let favorilerRef = fireStoreDatabase.collection("Favoriler")
+            let favoriData: [String: Any] = [
+                "aniBaslik": aniBaslik,
+                "kullaniciFoto": kullaniciFoto,
+                "not": not,
+                "tarih": tarih,
+                "kayıtBy": userEmail
+            ]
+            
+            favorilerRef.addDocument(data: favoriData) { error in
+                if let error = error {
+                    print("Error adding document to Favoriler collection: \(error.localizedDescription)")
+                } else {
+                    print("Document added to Favoriler collection successfully!")
+                }
+            }
+        }
     }
    
     

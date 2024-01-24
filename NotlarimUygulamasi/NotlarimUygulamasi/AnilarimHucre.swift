@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol FavoriButonDelegate: class {
+protocol FavoriButonDelegate: AnyObject {
     func favoriButonTiklandi(forCell cell: UITableViewCell)
 }
 

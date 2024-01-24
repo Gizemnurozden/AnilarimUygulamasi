@@ -6,21 +6,34 @@
 //
 
 import UIKit
+import Firebase
+
 
 class Favoriler: UIViewController {
-
     
-    @IBOutlet weak var favorilabel: UILabel!
     
+    @IBOutlet weak var favorilerTableView: UITableView!
+  
+    var favoritesData : [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       
+        
+     
+       
+    }
+  
+    
+   /*
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        AniEkleModel.sharedIntance.anibaslik.count
     }
     
-
-    @IBAction func button(_ sender: Any) {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
     }
-    
+   
+   */
 
 }

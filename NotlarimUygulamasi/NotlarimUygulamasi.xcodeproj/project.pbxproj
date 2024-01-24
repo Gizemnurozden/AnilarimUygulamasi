@@ -19,6 +19,7 @@
 		C53C17532B5E7EFC00CD0F6B /* Favoriler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53C17522B5E7EFC00CD0F6B /* Favoriler.swift */; };
 		C54857222B387EE700463959 /* DetaySayfasi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54857212B387EE700463959 /* DetaySayfasi.swift */; };
 		C54857242B3898A500463959 /* AnilarimHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54857232B3898A500463959 /* AnilarimHucre.swift */; };
+		C5722FF52B5E93990011EDA3 /* SifremiUnuttum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5722FF42B5E93990011EDA3 /* SifremiUnuttum.swift */; };
 		C5B07AF52B36FBCF00E7D8D7 /* AniEkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B07AF42B36FBCF00E7D8D7 /* AniEkle.swift */; };
 		C5B07AF72B3709D300E7D8D7 /* MapKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B07AF62B3709D300E7D8D7 /* MapKitVC.swift */; };
 		C5B971EA2B2F46DE00C8E5EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B971E92B2F46DE00C8E5EA /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		C53C17522B5E7EFC00CD0F6B /* Favoriler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favoriler.swift; sourceTree = "<group>"; };
 		C54857212B387EE700463959 /* DetaySayfasi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaySayfasi.swift; sourceTree = "<group>"; };
 		C54857232B3898A500463959 /* AnilarimHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnilarimHucre.swift; sourceTree = "<group>"; };
+		C5722FF42B5E93990011EDA3 /* SifremiUnuttum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SifremiUnuttum.swift; sourceTree = "<group>"; };
 		C5B07AF42B36FBCF00E7D8D7 /* AniEkle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AniEkle.swift; sourceTree = "<group>"; };
 		C5B07AF62B3709D300E7D8D7 /* MapKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitVC.swift; sourceTree = "<group>"; };
 		C5B971E62B2F46DE00C8E5EA /* NotlarimUygulamasi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotlarimUygulamasi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 				C54857232B3898A500463959 /* AnilarimHucre.swift */,
 				C5BDB0DE2B5C09C000B5E13A /* AniEkleModel.swift */,
 				C5B972072B2F67CA00C8E5EA /* Hesap.swift */,
+				C5722FF42B5E93990011EDA3 /* SifremiUnuttum.swift */,
 				C53C17522B5E7EFC00CD0F6B /* Favoriler.swift */,
 				C54857212B387EE700463959 /* DetaySayfasi.swift */,
 				F91A34082B35BD8A0027B00A /* Haritam.swift */,
@@ -213,6 +216,7 @@
 				C5B972042B2F67A200C8E5EA /* Anasayfa.swift in Sources */,
 				C5BDB0DF2B5C09C000B5E13A /* AniEkleModel.swift in Sources */,
 				C5B971EA2B2F46DE00C8E5EA /* AppDelegate.swift in Sources */,
+				C5722FF52B5E93990011EDA3 /* SifremiUnuttum.swift in Sources */,
 				C53C17532B5E7EFC00CD0F6B /* Favoriler.swift in Sources */,
 				C5B971EC2B2F46DE00C8E5EA /* SceneDelegate.swift in Sources */,
 				F9A8947E2B5D17F300C5156A /* kayit.swift in Sources */,

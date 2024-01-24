@@ -64,5 +64,11 @@ class ViewController: UIViewController {
         alert.addAction(okButton)
         self.present(alert, animated: true)
     }
+    
+    
+    @IBAction func sifremiUnuttumButton(_ sender: Any) {
+        performSegue(withIdentifier: "toSifremiUnuttum", sender: nil)
+    }
+    
 }
 

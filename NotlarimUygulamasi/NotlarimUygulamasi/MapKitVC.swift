@@ -36,7 +36,7 @@ class MapKitVC: UIViewController , MKMapViewDelegate , CLLocationManagerDelegate
         
         
         // geri dönüş butonu eklendi.
-        navigationController?.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(title: "SAVE", style: .plain, target: self, action: #selector(geriİkonuTiklandi))
+        navigationController?.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(title: "Kaydet", style: .plain, target: self, action: #selector(geriİkonuTiklandi))
         
         
         
@@ -65,7 +65,7 @@ class MapKitVC: UIViewController , MKMapViewDelegate , CLLocationManagerDelegate
             let pin = MKPointAnnotation()
             pin.coordinate = dokunulanKoordinat
             pin.title = AniEkleModel.sharedIntance.anibaslik
-            self.aniEkleMap.addAnnotation(pin)
+            aniEkleMap.addAnnotation(pin)
             
             
 //Seçilen pin koordinatlarını veritabanına aktarmak için string değerlere çevirip değişkenlere atadım.

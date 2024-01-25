@@ -45,8 +45,7 @@ class AnilarimHucre: UITableViewCell {
        
     }
     
-
-    
+//Anılarım hücresindeki switch kısmını kaydırınca veritabanındaki değerini değiştirme kodları eklendi.
     @IBAction func switchValueChanged(_ sender: UISwitch) {
         let fireStoreDatabase = Firestore.firestore()
         

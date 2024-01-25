@@ -2,7 +2,7 @@
 //  Favoriler.swift
 //  NotlarimUygulamasi
 //
-//  Created by Gizemnur Özden on 22.01.2024.
+//  Created by Gizemnur Özden & Ogün Minkara
 //
 
 import UIKit
@@ -21,9 +21,7 @@ class Favoriler: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var likesArray = [Bool()]
     var documentIdArray = [String()]
     var documentID: String?
-    
     var secilenAniId = ""
-    
     
     @IBOutlet weak var favorilerTableView: UITableView!
   
@@ -40,7 +38,7 @@ class Favoriler: UIViewController, UITableViewDelegate, UITableViewDataSource {
        }
     
     
-    //datadan like true olanları çekme kodları
+//datadan like true olanları çekme kodları
     func getDataFromFirestore(){
         
         
@@ -99,7 +97,7 @@ class Favoriler: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    //tableview kodları
+//tableview kodları
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return likesArray.count
        }

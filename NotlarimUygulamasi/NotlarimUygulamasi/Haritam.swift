@@ -37,7 +37,13 @@ class Haritam: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
 // veritabanından konumları enlem ve boylam olarak çektiğimiz kod.
     func firebaseLokasyonlari() {
-        db.collection("Anilar").getDocuments { (querySnapshot, error) in
+        guard let currentUser = Auth.auth().currentUser else {
+            // Kullanıcı oturum açmamışsa, işlemi iptal et
+            return
+        }
+//emaile göre kullanıcı kontrol etme
+        let userEmail = currentUser.email
+        db.collection("Anilar").whereField("kayıtBy", isEqualTo: userEmail).getDocuments { (querySnapshot, error) in
             if let error = error {
                 print("Firestore verileri alınamadı: \(error.localizedDescription)")
             } else {

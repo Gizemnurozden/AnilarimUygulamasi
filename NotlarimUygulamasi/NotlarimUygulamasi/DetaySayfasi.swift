@@ -2,7 +2,7 @@
 //  DetaySayfasi.swift
 //  NotlarimUygulamasi
 //
-//  Created by Gizemnur Özden on 24.12.2023.
+//  Created by Gizemnur Özden & Ogün Minkara
 //
 
 import UIKit
@@ -36,7 +36,7 @@ class DetaySayfasi: UIViewController {
         print(secilenEnlem)
         
     }
-    //detaylar sayfasına veri tabanından bilgileri çeken kodlar.
+//detaylar sayfasına veri tabanından bilgileri çeken kodlar.
     func getFromData() {
         let fireStoreDatabase = Firestore.firestore()
         

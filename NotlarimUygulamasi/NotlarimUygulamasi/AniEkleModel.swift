@@ -2,7 +2,7 @@
 //  AniEkleModel.swift
 //  NotlarimUygulamasi
 //
-//  Created by Gizemnur Özden on 20.01.2024.
+//  Created by Gizemnur Özden & Ogün Minkara
 //
 
 

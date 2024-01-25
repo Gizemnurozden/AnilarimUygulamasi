@@ -2,7 +2,7 @@
 //  SifremiUnuttum.swift
 //  NotlarimUygulamasi
 //
-//  Created by Gizemnur Özden on 22.01.2024.
+//  Created by Gizemnur Özden & Ogün Minkara
 //
 
 import UIKit
@@ -11,20 +11,19 @@ import Firebase
 
 class SifremiUnuttum: UIViewController {
     
-    
     @IBOutlet weak var emailDogrulamaText: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        
     }
     
-    //datadan veriyi silme kodları
+//datadan veriyi silme kodları
     func resetPassword(for email: String) {
         
-        //Emaili doğrulanan kişinin verisini siliyor
+//Emaili doğrulanan kişinin verisini siliyor
         Auth.auth().sendPasswordReset(withEmail: email) { (error) in
             if let error = error {
                 print("Şifre sıfırlama başarısız: \(error.localizedDescription)")
@@ -43,7 +42,7 @@ class SifremiUnuttum: UIViewController {
         }
         
         
-        //şifre yenileme butonuna basınca resetleyen kod
+//şifre yenileme butonuna basınca resetleyen kod
         @IBAction func sifreYenileButton(_ sender: Any) {
             
             let userEmail = emailDogrulamaText.text!

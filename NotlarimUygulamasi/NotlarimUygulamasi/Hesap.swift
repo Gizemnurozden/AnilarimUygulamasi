@@ -21,7 +21,7 @@ class Hesap: UIViewController {
 
         
         
-        //veritabanından giriş yapan kullanıcının emailini çekiyor.
+//veritabanından giriş yapan kullanıcının emailini çekiyor.
         
         if let user = Auth.auth().currentUser {
             if let email = user.email {
@@ -36,7 +36,7 @@ class Hesap: UIViewController {
 
     }
     
-    //Hesaptan çıkış yapmak için çıkış butonu
+//Hesaptan çıkış yapmak için çıkış butonu
     @IBAction func buttonCikis(_ sender: Any) {
         
         do {
@@ -48,10 +48,7 @@ class Hesap: UIViewController {
         
         
     }
-    
-    
-   
-    
+ //şifremi unuttuma tıklayınca şifre güncelleme sayfasına yönlendiriyor.
     
     @IBAction func sifremiUnuttumTiklandi(_ sender: Any) {
         performSegue(withIdentifier: "hesapToSifremiUnuttum", sender: nil

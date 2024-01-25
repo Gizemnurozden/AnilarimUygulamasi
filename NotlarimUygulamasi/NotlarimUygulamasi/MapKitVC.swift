@@ -35,7 +35,7 @@ class MapKitVC: UIViewController , MKMapViewDelegate , CLLocationManagerDelegate
         aniEkleMap.addGestureRecognizer(jestAlgılayıcı)
         
         
-        // geri dönüş butonu eklendi.
+// geri dönüş butonu eklendi.
         navigationController?.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(title: "Kaydet", style: .plain, target: self, action: #selector(geriİkonuTiklandi))
         
         
@@ -43,7 +43,7 @@ class MapKitVC: UIViewController , MKMapViewDelegate , CLLocationManagerDelegate
        
         
     }
-    
+//uyarı fonksiyonu
     func makeAlert(titleInput: String, messageInput: String) {
         let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
         let okButton = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default)
@@ -72,41 +72,12 @@ class MapKitVC: UIViewController , MKMapViewDelegate , CLLocationManagerDelegate
             AniEkleModel.sharedIntance.secilenEnlem = String(dokunulanKoordinat.latitude)
             AniEkleModel.sharedIntance.secilenBoylam = String(dokunulanKoordinat.longitude)
             
-          
-            
-// Seçilen pinin enlem ve boylam değerleri firebaseye aktarıldı aşağıda.
-            
-           
-            
-            
             
         }
     }
     
-   
-    /*func getDataFromFirebase() {
-        
-        let aniEkleModel = AniEkleModel.sharedIntance
-        let firestoreDatabase = Firestore.firestore()
-        
-        var firestoreReference : DocumentReference? = nil
-        
-        let firestoreAni = [ "aniBaslik" : aniEkleModel.anibaslik, "date " : aniEkleModel.tarihvesaat,  "not": aniEkleModel.not,"kayıtBy" : Auth.auth().currentUser!.email!, "secilenEnlem" : aniEkleModel.secilenEnlem , "secilenBoylam" : aniEkleModel.secilenBoylam, ] as [String: Any]
-        
-        firestoreReference = firestoreDatabase.collection("Anilar").addDocument(data: firestoreAni, completion: {(error) in
-            if error != nil {
-                self.makeAlert(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Error")
-            }else {
-                //Düzenlenecek.
-                //self.dismiss(animated: true)
-            }
-        })
-
-        
-    }
-    */
-    // sürekli gelen güncel konum aşağıda dizi halinde verilmiştir.
-    // dizinin ilk elemanına göre enlem boylam işaretlemesi yaptım ;
+// sürekli gelen güncel konum aşağıda dizi halinde verilmiştir.
+// dizinin ilk elemanına göre enlem boylam işaretlemesi yaptım ;
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let lokasyon = CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude)
         
@@ -118,15 +89,10 @@ class MapKitVC: UIViewController , MKMapViewDelegate , CLLocationManagerDelegate
         
     }
     
-    
-    
-    
-    
+//geri ikonu tanımlandı.
     @objc func geriİkonuTiklandi() {
         self.dismiss(animated: true)
     }
-    
-                                                                                        
 
     
 }

@@ -28,7 +28,7 @@ class AniEkle: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         super.viewDidLoad()
         
         
-        //görünüm kodları 
+//görünüm kodları
         
         let app = UINavigationBarAppearance()
         app.backgroundColor = UIColor.tertiarySystemBackground
@@ -110,9 +110,8 @@ class AniEkle: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         
         
     }
-
+//kaydetme kodları
     @objc func saveButtonTiklandi () {
-//kaydetme kodları gelecek
         
         let storage = Storage.storage()
         let storageReferance = storage.reference()
@@ -135,9 +134,7 @@ class AniEkle: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
                         if error == nil {
                             let imageUrl = url?.absoluteString
                             
-                            
 //DATABASE
-                            
                             let firestoreDatabase = Firestore.firestore()
                             
                             var firestoreReference : DocumentReference? = nil
@@ -148,32 +145,21 @@ class AniEkle: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
                                 if error != nil {
                                     self.makeAlert(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Error")
                                 }else {
-    //Düzenlenecek.
-    //self.dismiss(animated: true)
+                                    
                                 }
                             })
- 
-                            
-                            
-                            
                         }
-                        
-                     
                     }
                 }
             }
-            
-            
-            
-            
-            
         }
         self.dismiss(animated: true)
     }
+    
     @objc func backButtonTiklandi () {
         self.dismiss(animated: true, completion: nil)
     }
-    
+//mapkit tıklanınca yapılacak olan işlemler eklendi.
     @objc func mapKitTiklandi (){
         
         if aniBaslikText.text != "" {

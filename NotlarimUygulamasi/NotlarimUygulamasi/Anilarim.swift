@@ -52,19 +52,19 @@ class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource , A
             
            
         }
-    //DATABASE
+//DATABASE kodları
     
     func getDataFromFirestore(){
         
         
         let fireStoreDatabase = Firestore.firestore()
         
-        //Veritabanında kullanıcı kontrol etme
+//Veritabanında kullanıcı kontrol etme
         guard let currentUser = Auth.auth().currentUser else {
             // Kullanıcı oturum açmamışsa, işlemi iptal et
             return
         }
-        //emaile göre kullanıcı kontrol etme
+//emaile göre kullanıcı kontrol etme
         let userEmail = currentUser.email
         
         if let userEmail = userEmail {
@@ -116,14 +116,14 @@ class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource , A
             
         }
     }
-    //tıklandığında detay sayfasına geçiş kodları
+//tıklandığında detay sayfasına geçiş kodları
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetailVC" {
             let destinationVC = segue.destination as! DetaySayfasi
             destinationVC.chosenPlaceId = secilenAniId
         }
     }
-    //tıkladnığında detay sayfasına geçiş kodları
+//tıklandığında detay sayfasına geçiş kodları
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         secilenAniId = aniBaslikArray[indexPath.row]
         self.performSegue(withIdentifier: "toDetailVC", sender: nil)
@@ -152,7 +152,7 @@ class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource , A
         return hucre
         
     }
-    //VERİTABANINDAN VE ARAYÜZDEN SİLME İŞLEMLERİ YAZILDI.
+//VERİTABANINDAN VE ARAYÜZDEN SİLME İŞLEMLERİ YAZILDI.
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
             let silAction = UIContextualAction(style: .destructive, title: "Sil") { contextualAction, view, bool in
                 let selectedAniBaslik = self.aniBaslikArray[indexPath.row]
@@ -183,7 +183,7 @@ class Anilarim: UIViewController, UITableViewDelegate, UITableViewDataSource , A
             }
             return UISwipeActionsConfiguration(actions: [silAction])
         }
-    //FİREBASEDEN SİLME KODLARI
+//FİREBASEDEN SİLME KODLARI
     func deleteDataFromFirestore(aniBaslik: String) {
             let fireStoreDatabase = Firestore.firestore()
             

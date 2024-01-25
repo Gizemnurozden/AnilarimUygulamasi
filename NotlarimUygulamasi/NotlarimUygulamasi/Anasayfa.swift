@@ -44,7 +44,7 @@ class Anasayfa: UIViewController {
         
         self.view.addSubview(imageAniEkle)
         
-        //ani ekle tıklanabilirlik yapıldı.
+//ani ekle tıklanabilirlik yapıldı.
         imageAniEkle.isUserInteractionEnabled = true
         let aniEkleTiklama = UITapGestureRecognizer(target: self, action: #selector(aniEkleGecis))
         imageAniEkle.addGestureRecognizer(aniEkleTiklama)

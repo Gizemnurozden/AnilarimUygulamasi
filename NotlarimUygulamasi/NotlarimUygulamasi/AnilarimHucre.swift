@@ -2,7 +2,7 @@
 //  AnilarimHucre.swift
 //  NotlarimUygulamasi
 //
-//  Created by Gizemnur Özden on 24.12.2023.
+//  Created by Gizemnur Özden & Ogün Minkara 
 //
 
 import UIKit

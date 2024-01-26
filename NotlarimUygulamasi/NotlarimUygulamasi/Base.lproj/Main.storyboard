@@ -181,7 +181,7 @@
                                     <constraint firstAttribute="height" constant="34" id="YSq-6D-hn0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iG0-S4-cIH">
                                 <rect key="frame" x="105" y="530" width="179" height="58"/>
@@ -200,7 +200,7 @@
                                     <constraint firstAttribute="height" constant="34" id="Nro-cb-tPz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KULLANICI OLUŞTURMA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUa-1U-G2y">
                                 <rect key="frame" x="27" y="109" width="339" height="128"/>
@@ -945,7 +945,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="mZT-aZ-EVx"/>
         <segue reference="8tV-5M-s01"/>
-        <segue reference="mQH-8P-NfG"/>
+        <segue reference="Toy-vr-2Fg"/>
         <segue reference="FIw-Dh-cbf"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -954,9 +954,9 @@
         <image name="foto2" width="500" height="500"/>
         <image name="foto3" width="500" height="500"/>
         <image name="fotosec" width="882" height="530"/>
-        <image name="homekit" catalog="system" width="128" height="104"/>
-        <image name="person" catalog="system" width="128" height="121"/>
-        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="homekit" catalog="system" width="32" height="32"/>
+        <image name="person" catalog="system" width="32" height="32"/>
+        <image name="star" catalog="system" width="32" height="32"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -964,10 +964,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
